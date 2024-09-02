@@ -1,0 +1,67 @@
+* {
+  font-family: "Fira Sans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+}
+
+.full-w {
+  width: 100%;
+}
+
+.full-h {
+  height: 100%;
+}
+
+.full {
+  height: 100%;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.al-center {
+  display: flex;
+  align-items: center;
+}
+
+.js-center {
+  display: flex;
+  justify-content: center;
+}
+
+.js-bet {
+  display: flex;
+  justify-content: space-between;
+}
+.wrap{
+  flex-wrap: wrap;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.g-24 {
+  gap: 24px;
+}
+
+.g-16 {
+  gap: 16px;
+}

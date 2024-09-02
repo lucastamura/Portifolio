@@ -1,0 +1,61 @@
+/* Vibração do nome no header */
+.pointer.name-header {
+  display: inline-block;
+  transition: transform 0.1s ease-in-out;
+}
+
+.pointer.name-header:hover {
+  animation: vibrate 0.2s linear infinite;
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  75% {
+    transform: translateX(-2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Caixas para os links do cabeçalho */
+.button-header {
+  display: inline-block;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button-header h5 {
+  margin: 0;
+  padding: 10px 20px;
+}
+
+.button-header:hover {
+  transform: translateY(5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo base para a imagem */
+#home .full-moon {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+/* Estilo base para os elementos */
+.title-home, .color-1, .grafismo1, .grafismo2 {
+    animation: blink 0.7s infinite;
+}
+
+/* Animação de piscar */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
